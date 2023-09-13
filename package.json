@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "Project_init": "npm install && ionic cap add android && ionic cap add ios && vue-tsc && vite build",
+    "project_init": "npm install && ionic cap add android && ionic cap add ios && vue-tsc && vite build",
     "web_dev": "vite",
     "android_dev": "ionic cap run android -l --external",
     "ios_dev": "ionic cap run ios -l --external",
