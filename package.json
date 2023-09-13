@@ -8,6 +8,7 @@
     "web_dev": "vite",
     "android_dev": "ionic cap run android -l --external",
     "ios_dev": "ionic cap run ios -l --external",
+    "ios_devo": "ionic cap run ios -l --external --target B4652FAA-B189-4946-823B-36654C3E758F --public-host=192.168.2.7",
     "android_build": "ionic cap build android",
     "ios_build": "ionic cap build ios",
     "build": "vue-tsc && vite build",
@@ -27,6 +28,8 @@
     "@ionic/vue": "^7.0.0",
     "@ionic/vue-router": "^7.0.0",
     "ionicons": "^7.0.0",
+    "less": "^4.2.0",
+    "pinia": "^2.1.6",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
