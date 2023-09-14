@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from 'vue';
+import {onMounted, ref} from 'vue';
 import {useAppSystemStore} from "@/store/AppSystemStore.js";
 import {IonIcon, IonLabel, IonTabBar, IonTabButton} from "@ionic/vue";
 import {playCircle, radio, library, search} from 'ionicons/icons';
@@ -7,11 +7,16 @@ import {playCircle, radio, library, search} from 'ionicons/icons';
 const appSystemStore = useAppSystemStore();
 const list = ref(appSystemStore.navBarList);
 
-
+// onMounted(() => {
+//   const el = document.querySelector('ion-tab-bar');
+//   el.style.setProperty('--background', '#ffffff');
+// })
 </script>
 
 <template>
-  <ion-tab-bar slot="bottom">
+  <ion-tab-bar
+      translucent
+      slot="bottom">
     <ion-tab-button tab="home" href="/app/home">
       <ion-icon :icon="playCircle"/>
       <ion-label>首页</ion-label>
@@ -35,5 +40,12 @@ const list = ref(appSystemStore.navBarList);
 </template>
 
 <style scoped>
+ion-tab-bar {
+  --background: #ffffff;
+  --border: none;
+}
 
+.tab-selected {
+  color: #ff4f4f;
+}
 </style>
