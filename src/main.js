@@ -28,12 +28,14 @@ import {createPinia} from 'pinia';
 
 // 插件
 import {DisableSwipeBackDirective} from 'v-disable-swipe-back';
+import Vue3TouchEvents from "vue3-touch-events";
 
 
 const app = createApp(App)
     .use(IonicVue)
     .use(createPinia())
     .use(router)
+    .use(Vue3TouchEvents)
     .directive('disable-swipe-back', DisableSwipeBackDirective);
 
 router.isReady().then(() => {

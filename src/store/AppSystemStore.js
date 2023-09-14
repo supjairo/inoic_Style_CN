@@ -7,22 +7,22 @@ export const useAppSystemStore = defineStore('store', {
             name: '首页',
             path: '/app/home',
             icon: 'home',
-            component: () => import('../views/Modules/Home/index.vue'),
+            component: () => import('@/views/app/home/index.vue'),
         }, {
             name: '相册',
             path: "app/photo",
             icon: 'photo',
-            component: () => import('../views/Modules/Photo/index.vue'),
+            component: () => import('@/views/app/photo/index.vue'),
         }, {
             name: '消息',
             path: "app/message",
             icon: 'message',
-            component: () => import('../views/Modules/Message/index.vue'),
+            component: () => import('@/views/app/message/index.vue'),
         }, {
             name: '我的',
             path: "app/mine",
             icon: 'mine',
-            component: () => import('../views/Modules/Mine/index.vue'),
+            component: () => import('@/views/app/mine/index.vue'),
         }]
     }),
     getters: {

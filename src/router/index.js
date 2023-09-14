@@ -15,7 +15,7 @@ const routes = [
         children: AppRoutes
     }, {
         path: '/login',
-        component: () => import('@/views/Public/login.vue')
+        component: () => import('@/views/public/login.vue')
     }
 
 ]
