@@ -26,10 +26,15 @@ import './theme/variables.css';
 // 安装pinia
 import {createPinia} from 'pinia';
 
+// 插件
+import {DisableSwipeBackDirective} from 'v-disable-swipe-back';
+
+
 const app = createApp(App)
     .use(IonicVue)
     .use(createPinia())
-    .use(router);
+    .use(router)
+    .directive('disable-swipe-back', DisableSwipeBackDirective);
 
 router.isReady().then(() => {
     app.mount('#app');

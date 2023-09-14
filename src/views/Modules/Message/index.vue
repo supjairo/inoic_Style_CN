@@ -1,0 +1,14 @@
+<template>
+  <ion-page>
+    这是消息
+  </ion-page>
+</template>
+<script>
+
+import {defineComponent} from "vue";
+import {IonPage} from "@ionic/vue";
+
+export default defineComponent({
+  components: {IonPage}
+})
+</script>
