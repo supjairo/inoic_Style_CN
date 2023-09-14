@@ -1,4 +1,5 @@
 <template>
+  <!--全局用布局组件-->
   <ion-page>
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>

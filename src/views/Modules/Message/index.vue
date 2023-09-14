@@ -1,14 +1,11 @@
 <template>
-  <ion-page>
-    这是消息
-  </ion-page>
+  <head-layout>
+    <!--内容区域-->
+    这是自带的头部布局<br>
+    试试上下滑动会发现超出内容依然可以滚动<br>
+  </head-layout>
 </template>
-<script>
+<script setup>
+import HeadLayout from "@/layout/HeadLayout.vue";
 
-import {defineComponent} from "vue";
-import {IonPage} from "@ionic/vue";
-
-export default defineComponent({
-  components: {IonPage}
-})
 </script>

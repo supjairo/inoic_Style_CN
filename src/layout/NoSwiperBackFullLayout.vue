@@ -5,10 +5,9 @@ import {
 } from '@ionic/vue';
 
 </script>
-
+<!--禁止右滑动返回-->
 <template>
-  <!--全屏幕布局-->
-  <ion-page>
+  <ion-page v-disable-swipe-back>
     <ion-content>
       <slot/>
     </ion-content>

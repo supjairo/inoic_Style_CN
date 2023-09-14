@@ -27,7 +27,7 @@ const list = ref(appSystemStore.navBarList);
       <ion-label>消息</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="search" href="/search">
+    <ion-tab-button tab="mine" href="/app/mine">
       <ion-icon :icon="search"/>
       <ion-label>我的</ion-label>
     </ion-tab-button>

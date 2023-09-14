@@ -1,22 +1,8 @@
 <template>
-  <app-layout>
-    <template #content="{page}">
-      <ion-button @click="goMsg">
-        跳转到消息
-      </ion-button>
-    </template>
-  </app-layout>
+  <no-overscroll-head-layout>
+    这个示例页面还没有创建
+  </no-overscroll-head-layout>
 </template>
-
 <script setup>
-import {IonPage, IonButton, IonContent, IonToolbar} from "@ionic/vue";
-import {useRouter} from "vue-router";
-import {useIonRouter} from "@ionic/vue";
-import AppLayout from "@/layout/AppLayout.vue";
-
-const router = useRouter();
-const goMsg = () => {
-  console.log('goMsg')
-  router.push('/message')
-}
+import NoOverscrollHeadLayout from "@/layout/NoOverscrollHeadLayout.vue";
 </script>
